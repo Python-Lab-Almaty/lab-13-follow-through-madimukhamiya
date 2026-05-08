@@ -423,13 +423,6 @@ while True:
         going_forward = False
         hero.color('yellow')
         
-        log.append({
-            "event": "reached_goal_B",
-            "x": hero.xcor(),
-            "y": hero.ycor(),
-            "time": time.time()
-        })
-    
     # Проверка возвращения
     if not going_forward and abs(hero.xcor() - start[0]) < 40 and abs(hero.ycor() - start[1]) < 40:
         total_time = time.time() - start_time

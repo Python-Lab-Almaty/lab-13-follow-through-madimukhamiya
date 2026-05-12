@@ -133,7 +133,7 @@ start, goal, impassable_obstacles = load_or_create_positions(student_name)
 screen = turtle.Screen()
 screen.setup(WIDTH, HEIGHT)
 screen.title(f"Red Riding Hood Mission - {student_name}")
-screen.bgcolor("white")
+screen.bgcolor("light blue")
 screen.tracer(0)
 
 # ----------------------------
@@ -141,7 +141,7 @@ screen.tracer(0)
 # ----------------------------
 hero = turtle.Turtle()
 hero.shape("circle")
-hero.color("red")
+hero.color("blue")
 hero.penup()
 hero.goto(start)
 hero.shapesize(2, 2)
